@@ -17,7 +17,7 @@ This configuration guide assumes you have Windows 10 installed on your machine a
         * In "Text" tab, make sure the text font is large enough so you can see easily. 10pt works fine for me, but different machines tend to have different zoom
         * In "Keys" tab, I keep default shortcuts, but being familiar with keys is helpful for things like copy and paste (Ctrl + C and Ctrl + V do not work for copy/paste in Git Bash)
         * In "Terminal" tab, change "Type" to "xterm-256color" to allow correct syntax highlighting when using Vim in Git Bash
-    * Copy the files named ".bashrc", ".bash_aliases" to the Home location for Git Bash (this is denoted by "~"). On Windows, this is "C:\Users\\<USERNAME>"
+    * Copy the files named ".bashrc", ".bash_aliases" to the Home location for Git Bash (this is denoted by "~"). On Windows, this is "C:\Users\\\<USERNAME\>"
     * The last line of ".bashrc" will have to be changed once Anaconda is installed, but leave it as is for now. 
     * I have some specific configurations I use for Git as well, but I won't include that yet. Let me know if you want to see it, and I can include it in here
 
@@ -34,9 +34,9 @@ This configuration guide assumes you have Windows 10 installed on your machine a
     1.  Download here: https://www.anaconda.com/products/individual
     2.  Follow prompts. I installed Anaconda in my AppData folder (because I didn't have admin privileges at this point), but installing in Program Files works fine too
     3.  Once installed, you should see "Spyder" and "Anaconda Prompt" on your Desktop. 
-    4.  Navigate to your Anaconda Install (either "C:\Users\\<USERNAME>\Anaconda3" or "C:\Program Files\Anaconda3") and find the file "\<ANACONDA INSTALL\>\Scripts\activate"
+    4.  Navigate to your Anaconda Install (either "C:\Users\\\<USERNAME\>\Anaconda3" or "C:\Program Files\Anaconda3") and find the file "\<ANACONDA INSTALL\>\Scripts\activate"
     5.  Open up ".bashrc" from you Git Bash Home location and edit the last line to refer to the "activate" file in the previous step. This ensures that Git Bash activates Anaconda in each terminal session so that all Anaconda commands are available. 
-    6.  Find the file "<ANACONDA INSTALL>\Scripts\jupter-notebook.exe" and create a shortcut to this on your desktop. I'm a huge fan of jupyter-notebooks as a way of collaborating on projects. Running the ".exe" spins up a local server on your machine that allows you to write Python code and see the output of said code in browser. 
+    6.  Find the file "\<ANACONDA INSTALL\>\Scripts\jupter-notebook.exe" and create a shortcut to this on your desktop. I'm a huge fan of jupyter-notebooks as a way of collaborating on projects. Running the ".exe" spins up a local server on your machine that allows you to write Python code and see the output of said code in browser. 
 
 ## Usage
  
