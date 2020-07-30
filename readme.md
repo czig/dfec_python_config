@@ -30,7 +30,7 @@ This configuration guide assumes you have Windows 10 installed on your machine a
     4. A good website to use to get comfortable with Vim is https://vim-adventures.com/ (some of my key bindings will differ with what is shown here, but this website will get you comfortable with the vim construct)
 
  3. Install the Anaconda Python package 
-    * Anaconda packages up python and many of the commonly used python packages (such as Numpy, Scipy, Pandas, and Matplotlib) into one distribution. Anaconda also comes with its own package manager, called "conda", which acts as a replacement to the Python package manager "pip" (when installing packages, use "conda" as much as possible, but if it doesn't work, then revert to "pip"). Installing Anaconda gives you a MATLAB-esque IDE and a Python terminal (called Spyder) and a Python terminal.
+    * Anaconda packages up python and many of the commonly used python packages (such as Numpy, Scipy, Pandas, and Matplotlib) into one distribution. Anaconda also comes with its own package manager, called "conda", which acts as a replacement to the Python package manager "pip" (when installing packages, use "conda" as much as possible, but if it doesn't work, then revert to "pip"). Installing Anaconda gives you a MATLAB-esque IDE (called Spyder) and a Python terminal.
     1.  Download here: https://www.anaconda.com/products/individual
     2.  Follow prompts. I installed Anaconda in my AppData folder (because I didn't have admin privileges at this point), but installing in Program Files works fine too
     3.  Once installed, you should see "Spyder" and "Anaconda Prompt" on your Desktop. 
