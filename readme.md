@@ -17,7 +17,7 @@ This configuration guide assumes you have Windows 10 installed on your machine a
         * In "Text" tab, make sure the text font is large enough so you can see easily. 10pt works fine for me, but different machines tend to have different zoom
         * In "Keys" tab, I keep default shortcuts, but being familiar with keys is helpful for things like copy and paste (Ctrl + C and Ctrl + V do not work for copy/paste in Git Bash)
         * In "Terminal" tab, change "Type" to "xterm-256color" to allow correct syntax highlighting when using Vim in Git Bash
-    * Copy the files named ".bashrc", ".bash_aliases" to the Home location for Git Bash (this is denoted by "~"). On Windows, this is "C:\Users\<<User Name>>"
+    * Copy the files named ".bashrc", ".bash_aliases" to the Home location for Git Bash (this is denoted by "~"). On Windows, this is "C:\Users\<USERNAME>"
     * The last line of ".bashrc" will have to be changed once Anaconda is installed, but leave it as is for now. 
     * I have some specific configurations I use for Git as well, but I won't include that yet. Let me know if you want to see it, and I can include it in here
 
@@ -34,15 +34,15 @@ This configuration guide assumes you have Windows 10 installed on your machine a
     1.  Download here: https://www.anaconda.com/products/individual
     2.  Follow prompts. I installed Anaconda in my AppData folder (because I didn't have admin privileges at this point), but installing in Program Files works fine too
     3.  Once installed, you should see "Spyder" and "Anaconda Prompt" on your Desktop. 
-    4.  Navigate to your Anaconda install (either "C:\Users\<<User Name>>\Anaconda3" or "C:\Program Files\Anaconda3") and find the file "<<Anaconda install>>\Scripts\activate"
+    4.  Navigate to your Anaconda Install (either "C:\Users\<USERNAME>\Anaconda3" or "C:\Program Files\Anaconda3") and find the file "<ANACONDA INSTALL>\Scripts\activate"
     5.  Open up ".bashrc" from you Git Bash Home location and edit the last line to refer to the "activate" file in the previous step. This ensures that Git Bash activates Anaconda in each terminal session so that all Anaconda commands are available. 
-    6.  Find the file "<<Anaconda install>>\Scripts\jupter-notebook.exe" and create a shortcut to this on your desktop. I'm a huge fan of jupyter-notebooks as a way of collaborating on projects. Running the ".exe" spins up a local server on your machine that allows you to write Python code and see the output of said code in browser. 
+    6.  Find the file "<ANACONDA INSTALL>\Scripts\jupter-notebook.exe" and create a shortcut to this on your desktop. I'm a huge fan of jupyter-notebooks as a way of collaborating on projects. Running the ".exe" spins up a local server on your machine that allows you to write Python code and see the output of said code in browser. 
 
 ## Usage
  
  1. If you are unfamiliar with Git Bash, the gist is that it gives Linux-like functionality within Windows. Its main intent is to give access to git commands within Windows. If you are unfamiliar with git, git is a very popular version control system. It is great for version-controlling text documents/code and documenting said documents/code. 
     * A git cheat sheet is included in this repository
- 2. Vim is a popular text editor, but it comes with many complexities. Run the command `vim <<filename>>` to open vim. Vim is a 'mode' based editor, and its four main modes are 'normal', 'insert', 'command', and 'visual'. Normal mode is intended for navigating the text and replacing/removing text or running functions/macros. Insert mode is used for writing and editing large blocks of text. Command mode is used for running commands (for me this is typically saving the file, running a regex search, or closing the file). Visual mode is used for applying functions to many lines of text at once. In my configuration, insert mode is reached by pressing "i" from normal mode. Normal mode is the default when entering Vim, and it is reached by pressing "jk" in quick succession from insert mode. Pressing ":" from normal mode enters command mode. Visual mode is reached by pressing "v", "Shift-v", or "Ctrl-v" when in in normal mode. 
+ 2. Vim is a popular text editor, but it comes with many complexities. Run the command `vim <FILENAME>` to open vim. Vim is a 'mode' based editor, and its four main modes are 'normal', 'insert', 'command', and 'visual'. Normal mode is intended for navigating the text and replacing/removing text or running functions/macros. Insert mode is used for writing and editing large blocks of text. Command mode is used for running commands (for me this is typically saving the file, running a regex search, or closing the file). Visual mode is used for applying functions to many lines of text at once. In my configuration, insert mode is reached by pressing "i" from normal mode. Normal mode is the default when entering Vim, and it is reached by pressing "jk" in quick succession from insert mode. Pressing ":" from normal mode enters command mode. Visual mode is reached by pressing "v", "Shift-v", or "Ctrl-v" when in in normal mode. 
     * A vim cheat sheet is included in this repository (not all of the commands will align with mine, for example, default Vim binding for going from insert mode to command mode is Esc)
  3. The conda package manager is an important aspect of Anaconda. A few common commands are:
     * `conda install PACKAGENAME` for installing new packages
